@@ -1,13 +1,6 @@
 FROM php:7.4-apache
 LABEL maintainer="gabrielegiuranno@gmail.com"
 
-RUN touch /usr/local/etc/php/conf.d/uploads.ini \
-    && echo "max_execution_time = 300;" >> /usr/local/etc/php/conf.d/uploads.ini \
-    && echo "upload_max_filesize = 40M;" >> /usr/local/etc/php/conf.d/uploads.ini \
-    && echo "post_max_size = 40M;" >> /usr/local/etc/php/conf.d/uploads.ini \
-    && echo "memory_limit = 1024M;" >> /usr/local/etc/php/conf.d/uploads.ini \
-    && echo "max_file_uploads = 50;" >> /usr/local/etc/php/conf.d/uploads.ini
-
 RUN a2enmod rewrite
 
 RUN mkdir -p /usr/share/man/man1
