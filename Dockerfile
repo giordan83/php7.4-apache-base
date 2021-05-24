@@ -23,7 +23,8 @@ RUN apt-get update && \
 	zlib1g-dev \
 	libzip-dev \
 	libxml2-dev \
-    unzip && \
+    	pdftk && \
+	unzip && \
     rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install pdo pdo_pgsql intl
