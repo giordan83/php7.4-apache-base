@@ -23,7 +23,7 @@ RUN apt-get update && \
 	zlib1g-dev \
 	libzip-dev \
 	libxml2-dev \
-    	pdftk && \
+    	pdftk \
 	unzip && \
     rm -rf /var/lib/apt/lists/*
 
