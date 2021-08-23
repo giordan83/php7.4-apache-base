@@ -15,6 +15,7 @@ RUN apt-get update && \
 	curl \
 	vim \
 	htop \
+  net-tools \
 	p7zip-full \
 	libpng-dev \
 	libfreetype6-dev \
@@ -23,9 +24,12 @@ RUN apt-get update && \
 	zlib1g-dev \
 	libzip-dev \
 	libxml2-dev \
-    	pdftk \
+	pdftk \
+  xfonts-base \
+  xfonts-75dpi \
+  urw-fonts \
 	unzip && \
-    rm -rf /var/lib/apt/lists/*
+  rm -rf /var/lib/apt/lists/*
 
 RUN docker-php-ext-install pdo pdo_pgsql intl
 RUN docker-php-ext-configure gd && docker-php-ext-install gd
