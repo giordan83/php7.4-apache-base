@@ -27,7 +27,6 @@ RUN apt-get update && \
 	pdftk \
   xfonts-base \
   xfonts-75dpi \
-  urw-fonts \
 	unzip && \
   rm -rf /var/lib/apt/lists/*
 
