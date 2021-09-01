@@ -15,7 +15,8 @@ RUN apt-get update && \
 	curl \
 	vim \
 	htop \
-  net-tools \
+  iputils-ping \
+  dnsutils \
 	p7zip-full \
 	libpng-dev \
 	libfreetype6-dev \
