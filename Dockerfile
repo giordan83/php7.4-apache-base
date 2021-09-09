@@ -15,8 +15,8 @@ RUN apt-get update && \
 	curl \
 	vim \
 	htop \
-  iputils-ping \
-  dnsutils \
+    iputils-ping \
+    dnsutils \
 	p7zip-full \
 	libpng-dev \
 	libfreetype6-dev \
@@ -26,8 +26,8 @@ RUN apt-get update && \
 	libzip-dev \
 	libxml2-dev \
 	pdftk \
-  xfonts-base \
-  xfonts-75dpi \
+    xfonts-base \
+    xfonts-75dpi \
 	unzip && \
   rm -rf /var/lib/apt/lists/*
 
